@@ -1,0 +1,9 @@
+Vent's display wiring
+
+Display			Arduino
+RS(4)				D13(SCK)
+E(6)				D12(SDO)
+DB4(11)			D11(SDI)
+DB5(12)			D10(CS_TFT)
+DB6(13)			D9(D_C)
+DB7(14)			D8(TOUCH)			
