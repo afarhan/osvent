@@ -117,47 +117,10 @@ Wire Wire Line
 Connection ~ 2200 2300
 Wire Wire Line
 	2200 2300 2350 2300
-$Comp
-L Relay:G5V-2 K1
-U 1 1 5E7F1618
-P 1450 1900
-F 0 "K1" V 2217 1900 50  0000 C CNN
-F 1 "G5V-2" V 2126 1900 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 2100 1850 50  0001 L CNN
-F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 1450 1900 50  0001 C CNN
-	1    1450 1900
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1250 3300 2050 3300
 Wire Wire Line
 	1250 3150 1250 3300
-Wire Wire Line
-	1750 2300 1750 2950
-Connection ~ 1750 2950
-Wire Wire Line
-	1750 2950 2050 2950
-$Comp
-L power:GNDREF #PWR01
-U 1 1 5E7FD598
-P 1150 2500
-F 0 "#PWR01" H 1150 2250 50  0001 C CNN
-F 1 "GNDREF" H 1155 2327 50  0000 C CNN
-F 2 "" H 1150 2500 50  0001 C CNN
-F 3 "" H 1150 2500 50  0001 C CNN
-	1    1150 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 2500 1150 2300
-Wire Wire Line
-	1750 1900 1750 1500
-Wire Wire Line
-	1150 1800 1000 1800
-Wire Wire Line
-	1000 1800 1000 1400
-Wire Wire Line
-	1000 1400 1150 1400
 $Comp
 L Driver_Motor:Pololu_Breakout_A4988 A2
 U 1 1 5E7DAD15
@@ -169,18 +132,6 @@ F 3 "https://www.pololu.com/product/2980/pictures" H 4500 3500 50  0001 C CNN
 	1    4400 3800
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	1350 950  1350 1100
-Wire Wire Line
-	1350 1100 1000 1100
-Wire Wire Line
-	1000 1100 1000 1400
-Connection ~ 1000 1400
-Wire Wire Line
-	1350 850  1750 850 
-Wire Wire Line
-	1750 850  1750 1500
-Connection ~ 1750 1500
 $Comp
 L Transistor_FET:IRF4905 Q3
 U 1 1 5E823AA6
@@ -274,59 +225,10 @@ Wire Wire Line
 Connection ~ 2350 5450
 Wire Wire Line
 	2350 5450 2500 5450
-$Comp
-L Relay:G5V-2 K2
-U 1 1 5E823AE6
-P 1600 5050
-F 0 "K2" V 2367 5050 50  0000 C CNN
-F 1 "G5V-2" V 2276 5050 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Omron_G5V-2" H 2250 5000 50  0001 L CNN
-F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_2.pdf" H 1600 5050 50  0001 C CNN
-	1    1600 5050
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1400 6450 2200 6450
 Wire Wire Line
 	1400 6300 1400 6450
-Wire Wire Line
-	1900 5450 1900 6100
-Connection ~ 1900 6100
-Wire Wire Line
-	1900 6100 2200 6100
-$Comp
-L power:GNDREF #PWR02
-U 1 1 5E823AF2
-P 1300 5650
-F 0 "#PWR02" H 1300 5400 50  0001 C CNN
-F 1 "GNDREF" H 1305 5477 50  0000 C CNN
-F 2 "" H 1300 5650 50  0001 C CNN
-F 3 "" H 1300 5650 50  0001 C CNN
-	1    1300 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 5650 1300 5450
-Wire Wire Line
-	1900 5050 1900 4650
-Wire Wire Line
-	1300 4950 1150 4950
-Wire Wire Line
-	1150 4950 1150 4550
-Wire Wire Line
-	1150 4550 1300 4550
-Wire Wire Line
-	1500 4100 1500 4250
-Wire Wire Line
-	1500 4250 1150 4250
-Wire Wire Line
-	1150 4250 1150 4550
-Connection ~ 1150 4550
-Wire Wire Line
-	1500 4000 1900 4000
-Wire Wire Line
-	1900 4000 1900 4650
-Connection ~ 1900 4650
 $Comp
 L Connector_Generic:Conn_01x14 J8
 U 1 1 5E82701E
@@ -843,28 +745,6 @@ $EndComp
 Wire Wire Line
 	7800 5200 7800 5100
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5E9CD613
-P 1150 850
-F 0 "J2" H 1068 1067 50  0000 C CNN
-F 1 "SWITCH_A" H 1068 976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1150 850 50  0001 C CNN
-F 3 "~" H 1150 850 50  0001 C CNN
-	1    1150 850 
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5E9D605F
-P 1300 4000
-F 0 "J3" H 1218 4217 50  0000 C CNN
-F 1 "SWITCH_B" H 1218 4126 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1300 4000 50  0001 C CNN
-F 3 "~" H 1300 4000 50  0001 C CNN
-	1    1300 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x05 J7
 U 1 1 5E9DE2D3
 P 10600 1400
@@ -949,8 +829,6 @@ Wire Wire Line
 NoConn ~ 4000 1850
 NoConn ~ 4100 1850
 NoConn ~ 4400 1850
-NoConn ~ 5200 1850
-NoConn ~ 5300 1850
 Wire Wire Line
 	4100 3400 4100 3300
 Wire Wire Line
@@ -1019,7 +897,6 @@ $EndComp
 Wire Wire Line
 	3850 6550 3950 6550
 NoConn ~ 3850 6650
-NoConn ~ 4700 2850
 $Comp
 L power:GNDREF #PWR028
 U 1 1 5EACFFC6
@@ -1114,10 +991,6 @@ Connection ~ 3900 6750
 NoConn ~ 7000 5200
 NoConn ~ 7100 5200
 NoConn ~ 7000 4600
-NoConn ~ 1300 4750
-NoConn ~ 1300 5150
-NoConn ~ 1150 1600
-NoConn ~ 1150 2000
 Wire Wire Line
 	3400 2150 3600 2150
 NoConn ~ 4000 2850
@@ -1446,8 +1319,6 @@ F 5 "Manufacturer recommendations" H 1050 3050 50  0001 L BNN "Field5"
 	1    1050 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 2950 1750 2950
 $Comp
 L osvent_controller-rescue:RCJ-047-rca_jacks J4
 U 1 1 5E94F191
@@ -1461,8 +1332,6 @@ F 5 "Manufacturer recommendations" H 1200 6200 50  0001 L BNN "Field5"
 	1    1200 6200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 6100 1900 6100
 $Comp
 L Transistor_BJT:MMBT3904 Q2
 U 1 1 5EA1CB71
@@ -1714,4 +1583,84 @@ Wire Wire Line
 	9850 1600 10400 1600
 Wire Wire Line
 	9450 2150 9850 2150
+$Comp
+L Connector_Generic:Conn_01x05 J10
+U 1 1 5E872742
+P 5400 1450
+F 0 "J10" V 5400 1850 50  0000 R CNN
+F 1 "EXTENSION PORT" V 5500 1800 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 5400 1450 50  0001 C CNN
+F 3 "~" H 5400 1450 50  0001 C CNN
+	1    5400 1450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5200 1850 5200 1650
+Wire Wire Line
+	5300 1650 5300 1850
+$Comp
+L power:GNDREF #PWR032
+U 1 1 5E893C7D
+P 5600 1700
+F 0 "#PWR032" H 5600 1450 50  0001 C CNN
+F 1 "GNDREF" H 5605 1527 50  0001 C CNN
+F 2 "" H 5600 1700 50  0001 C CNN
+F 3 "" H 5600 1700 50  0001 C CNN
+	1    5600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1700 5600 1650
+$Comp
+L power:+5V #PWR033
+U 1 1 5E8A245D
+P 5700 1900
+F 0 "#PWR033" H 5700 1750 50  0001 C CNN
+F 1 "+5V" V 5715 2028 50  0000 L CNN
+F 2 "" H 5700 1900 50  0001 C CNN
+F 3 "" H 5700 1900 50  0001 C CNN
+	1    5700 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 1650 5500 1900
+Wire Wire Line
+	5500 1900 5700 1900
+Text GLabel 4700 2950 3    50   Input ~ 0
+EXTRA
+Wire Wire Line
+	4700 2950 4700 2850
+Text GLabel 5400 1650 3    50   Input ~ 0
+EXTRA
+Wire Wire Line
+	1250 2950 2050 2950
+Wire Wire Line
+	1400 6100 2200 6100
+$Comp
+L Device:CP C?
+U 1 1 5E94EEDD
+P 3650 4300
+F 0 "C?" H 3450 4250 50  0000 L CNN
+F 1 "47u" H 3450 4150 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3688 4150 50  0001 C CNN
+F 3 "~" H 3650 4300 50  0001 C CNN
+	1    3650 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4150 3650 4000
+Connection ~ 3650 4000
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5E95BDE9
+P 3650 4500
+F 0 "#PWR?" H 3650 4250 50  0001 C CNN
+F 1 "GNDREF" H 3655 4327 50  0000 C CNN
+F 2 "" H 3650 4500 50  0001 C CNN
+F 3 "" H 3650 4500 50  0001 C CNN
+	1    3650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4500 3650 4450
 $EndSCHEMATC
